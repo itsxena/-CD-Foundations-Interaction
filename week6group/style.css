@@ -1,0 +1,29 @@
+html, body {
+	background-color: #F0F0F0;
+	font-family: 'Oxygen', sans-serif;
+}
+
+.gallery1 {
+	width: 500px;
+	padding: 150px;
+	margin: 10px;
+
+}
+
+.post1 {
+  font-size: 150%;
+}
+
+.post2 {
+	text-align: left;
+	font-size: 80%;
+}
+
+.gallery2 {
+	position: relative;
+    left: 125%;
+	bottom: 700px;
+    width: 900px;
+    height: 800px;
+
+}
