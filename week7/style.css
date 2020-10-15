@@ -1,0 +1,76 @@
+html, body {
+	background-color: #D7D7D7;
+	font-family: 'Roboto', sans-serif;
+	top: 0px;
+	left: 0px;
+	width:100%;
+	margin:0px;	
+}
+
+.gallery1 {
+	position: absolute;
+}
+
+.nav-button1 {
+	text-align: center;
+	position: relative;
+	bottom: 370px;
+	right: 1395px;
+}
+
+.nav-button2 {
+	position: relative;
+	left: 20%;
+	bottom: 43px;
+}
+
+.nav-button3 {
+	position: relative;
+	left: 20%;
+	bottom: 43px;
+}
+
+.gallery2 {
+	position: absolute;
+	right: -37%;
+	top: -60%;
+}
+
+.title {
+	position: absolute;
+	left: 90%;
+	top: 280px;
+}
+
+.text {
+	position: relative;
+	text-align: center;
+	font-weight:300;
+	width: 665px;
+	bottom: -10px;
+	right: -7%;
+}
+
+.button {
+	position: relative;
+	bottom: -343px;
+	right: 43%;
+}
+
+.icon {
+	position: relative;
+	left: 14%;
+	bottom: 50px;
+}
+
+.arrow1 {
+	position: relative;
+	left: 3%;
+	bottom: 435px;
+}
+
+.arrow2 {
+	position: relative;
+	left: 90%;
+	bottom: 43px;
+}
