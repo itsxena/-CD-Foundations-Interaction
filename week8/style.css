@@ -1,0 +1,116 @@
+html, body {
+	background-color: #FEF6ED;
+	font-family: 'Montserrat', sans-serif;
+
+	top: 0;
+	left: 0;
+	width:100%;
+	margin:0;	
+}
+
+.title1 {
+	color: #AF9C97;
+	position: fixed;
+	width: 550px;
+	height: 124px;
+	left: 400px;
+	top: -35px;
+
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 100px;
+	line-height: 122px;
+}
+
+.info {
+	color: #AF9C97;
+	position: absolute;
+	width: 560px;
+	height: 39px;
+	left: 393px;
+	top: 210px;
+
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 37px;
+}
+
+.colors1 {
+	position: absolute;
+	width: 279.49px;
+	height: 788px;
+	left: 228px;
+	top: 368px;
+}
+
+.colors2 {
+	position: absolute;
+	width: 292px;
+	height: 157px;
+	left: 170px;
+	top: 230px;
+
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 40px;
+	line-height: 49px;
+	text-align: center;
+}
+
+.japan1 {
+	position: absolute;
+	width: 617.97px;
+	height: 726px;
+	left: 59px;
+	top: 1333px;
+}
+
+.japan2 {
+	position: absolute;
+	width: 388px;
+	height: 92px;
+	left: 490px;
+	top: 1326px;
+
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 40px;
+	line-height: 49px;
+	text-align: center;
+}
+
+.characteristics1 {
+	position: absolute;
+	width: 445.34px;
+	height: 405px;
+	left: 200px;
+	top: 2318px;
+}
+
+.characteristics2 {
+	position: absolute;
+	width: 340px;
+	height: 143px;
+	left: 595px;
+	top: 2210px;
+
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 40px;
+	line-height: 49px;
+	text-align: center;
+}
+
+.pawprint {
+	position: absolute;
+	width: 631.77px;
+	height: 4260.46px;
+	left: 617px;
+	top: 36px;
+}
