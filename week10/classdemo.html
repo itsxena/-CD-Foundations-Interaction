@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+	body, html {
+		font-family: Helevetica Neue, sans-serif;
+	}
+	.option {
+		display:inline-block;
+		margin: 2%;
+		padding:1% 2%;
+		border: 0.10em solid black;
+		font-weight: bold;
+	}
+
+</style>
+<body>
+
+<div class='option' id='happy'>Happy</div>
+<div class='option' id='neutral'>Neutral</div>
+<div class='option' id='sad'>Sad</div>
+
+</body>
+
+<script type="text/javascript" src='main.js'>
+
+happy.onclick=function(){
+happy.innerHTML='I am happy today!'
+happy.style.width='5em'
+
+}
+
+neutral.onclick=function(){
+neutral.innerHTML='But, sometimes I can be neutral.'
+neutral.style.width='5em'
+
+}
+
+sad.onclick=function(){
+sad.innerHTML='There are some days where I am sad too.'
+sad.style.width='5em'
+
+}
+
+</script>
+
+</html>
