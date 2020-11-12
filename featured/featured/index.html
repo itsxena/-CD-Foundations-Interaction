@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Featured and shuffling</title>
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+<style type="text/css">
+body, html {
+	font-family:'Helvetica Neue', sans-serif;
+	top:0;
+	left:0;
+	margin:0;
+}
+#logo {
+	margin:2%;
+	font-weight:800;
+	letter-spacing:-0.05em;
+	font-size:2em;
+}
+#logo em {
+	font-style:normal;
+	color:red;
+}
+#featured {
+	position:relative;
+	width:100%;
+	height:60vh;
+	overflow:hidden;
+	margin:0%;
+}
+.item {
+	animation: fadeIn 1s ease-in-out;
+}
+#featured img {
+	width:100%;
+	margin-top:-10%;
+}
+#featured h1{
+	position:absolute;
+	font-size:3em;
+	background-color:black;
+	padding:0% 5%;
+	letter-spacing:-0.05em;
+	margin:2%;
+	color:white;
+}
+hr {
+	margin:0%;
+}
+section {
+	overflow-x:scroll;
+	overflow-y: hidden;
+  	white-space: nowrap;
+}
+section h1 {
+	margin:2%;
+	font-size:1em;
+	letter-spacing:-0.05em;
+}
+h2 {
+	margin:2%;
+}
+section .item {
+	display:inline-block;
+	width:15%;
+	height:40vh;
+	margin:2%;
+	overflow:hidden;
+	vertical-align:top;
+	border:0.2em solid black;
+}
+section img {
+	height:100%;
+	width:auto;
+	margin-left:-35%;
+}
+@keyframes fadeIn {
+	0% {
+		opacity:0;
+		height:0%;
+	}
+	100% {
+		opacity:1;
+		height:100%;
+	}
+}
+</style>
+<body>
+<!-- header -->
+<nav>
+	<div id='logo'>go<em>electric</em></div>
+</nav>
+
+<!-- featured -->
+<div id='featured'>
+<h2>Featured</h2>
+</div>
+<hr>
+<!-- all -->
+<h2>Browse all</h2>
+<section>
+</section>
+
+</body>
+<script type="text/javascript">
+//shuffle array function
+function shuffle(array) {
+  array.sort(() => Math.random() - 0.5);
+}
+
+d3.csv('https://raw.githubusercontent.com/3milychu/demo/master/data.csv')
+.then(function(data){
+	displayFeatured(data, '#featured')
+	setInterval(function(){
+		displayFeatured(data, '#featured')
+	},10000)
+	displayAll(data,'section')
+	console.log(random)
+})
+.catch(function(error){
+	//console.log(error)
+})
+
+function displayFeatured(data, location){
+	clear('#featured')
+	shuffle(data)
+	random = data[0]
+	console.log(random)
+	target = document.querySelector(location)
+	div = document.createElement('div')
+	div.setAttribute('class','item')
+	name = random['name']
+	main_img = random['cover_img']
+	link = random['url']
+	div.innerHTML="<h1>"+ name + "</h1><img class='main' src='"+ main_img + "'>"
+	target.appendChild(div)
+}
+
+function displayAll(data, location){
+	target = document.querySelector(location)
+	data.forEach(function(item){
+		div = document.createElement('div')
+		div.setAttribute('class','item')
+		name = item['name']
+		main_img = item['cover_img']
+		div.innerHTML="<h1>"+ name + "</h1><img class='main' src='"+ main_img + "'>"
+		target.appendChild(div)
+	})
+
+}
+
+function clear(location){
+	target=document.querySelector(location)
+	target.innerHTML=""
+}
+
+
+
+</script>
+</html>

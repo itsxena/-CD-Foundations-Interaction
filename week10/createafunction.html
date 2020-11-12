@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>secret blog.</title>
+
+</head>
+
+<style type="text/css">
+	body, html {
+		font-family: Arial, sans-serif;
+}
+	.supersecret {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -50px;
+	margin-left: -100px;
+	font-weight: bold;
+	color: pink;
+	text-align: center;
+}
+
+</style>
+
+<body>
+
+<div class='supersecret' id='secret'>Want To Know a Secret?</div>
+
+<script>
+
+let secret = document.querySelector('#secret')
+
+supersecret.onchange=function(){
+	if((supersecret.innerHTML='Yes') || (supersecret.value=='yes')){
+		supersecret.innerHTML="I think you are great!"
+}
+
+</script>
+
+
+
+</body>
+</html>

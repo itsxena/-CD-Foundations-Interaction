@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Group Workshop</title>
+</head>
+<body>
+
+<script>
+
+function toggleImage() {
+   var img1 = "https://townsquare.media/site/812/files/2018/10/Joey-badass.jpg";
+   var img2 = "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2018%2F02%2Fjoey-badass-ev-bravado-pop-up-shop-9.jpg?q=75&w=800&cbr=1&fit=max";
+   var img3 = "https://townsquare.media/site/812/files/2018/10/Joey-badass.jpg";
+   var img4 = "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2018%2F02%2Fjoey-badass-ev-bravado-pop-up-shop-9.jpg?q=75&w=800&cbr=1&fit=max";
+   
+   var imgElement = document.getElementById('toggleImage');
+
+   imgElement.src = (imgElement.src === img1)? img2 : img1;
+}
+
+</script>
+
+<img src="http://placehold.it/350x150" id="toggleImage" onclick="toggleImage();"/>
+
+</body>
+</html>
