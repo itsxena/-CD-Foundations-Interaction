@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CANDY</title>
+</head>
+<style type="text/css">
+	#main {
+		height:80vh;
+		width:100%;
+		overflow-x:scroll;
+		overflow-y:hidden;
+		white-space:nowrap;
+		scroll-snap-type: x mandatory;
+	}
+	.featured {
+		display:inline-block;
+		width:80%;
+		height:auto;
+		overflow:hidden;
+		vertical-align:top;
+		margin:0;
+		scroll-snap-align: start;
+	}
+	.featured img {
+		object-fit: cover;
+		width:100%;
+	}
+	#selector {
+		margin:4% 0%;
+		text-align:center;
+	}
+	.option {
+		display:inline-block;
+		margin:0% 0.5%;
+		width:1em;
+		height:1em;
+		background-color:#cccccc;
+		border-radius:50%;
+		cursor:pointer;
+		transition:0.25s ease-in-out;
+	}
+	.option:hover {
+		background-color:#666666;
+	}
+</style>
+<body>
+
+<div class='title'>
+  <h1>
+    CANDY GALORE
+  </h1>
+  </div>
+
+<div id='main'>
+	<div class='featured' id='post1'>
+		<img src="https://smhttp-ssl-60529-live.nexcesscdn.net/pub/media/catalog/product/cache/94cbc74f8a2afff5bcd2ab46b3de7f83/s/t/starburst-fruit-chews.jpg">
+	</div>
+	<div class='featured' id='post2'>
+		<img src="https://s.yimg.com/aah/blaircandy/sugar-free-gummy-bears-5lb-bag-43.jpg">
+	</div>
+	<div class='featured' id='post3'>
+		<img src="https://oconnellfuneralhomes.com/wp-content/uploads/2018/02/Valentines-Day-Candy-Hearts.jpg">
+	</div>
+	<div class='featured' id='post4'>
+		<img src="https://www.ohnuts.com/noapp/showImage.cfm/extra-large/Mini%20Assorted%20Rainbow%20M&M%27s%20Milk%20Chocolate%20Candy.jpg">
+	</div>
+</div>
+
+<div id='selector'>
+	<div class='option' id='option1'></div>
+	<div class='option' id='option2'></div>
+	<div class='option' id='option3'></div>
+	<div class='option' id='option4'></div>
+</div>
+
+</body>
+<script type="text/javascript">
+
+let options = document.querySelectorAll('.option')
+	post1 = document.querySelector('#post1')
+	post2 = document.querySelector('#post2')
+	post3 = document.querySelector('#post3')
+	post4 = document.querySelector('#post4')
+
+options.forEach(item=>{
+		
+	item.onclick=function() {
+		id=item.id
+		console.log(id)
+		split = id.split('option')
+		console.log(split)
+		ref = split[1]
+		console.log(ref)
+		console.log('click')
+		element = document.querySelector('#post'+ref)
+		element.scrollIntoView({
+			behavior: "smooth"
+		})
+	}
+})
+
+</script>
+</html>
