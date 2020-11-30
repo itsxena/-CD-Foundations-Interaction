@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+	<title>His End & His Beginning</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+<style type="text/css">
+
+html, body {
+font-family: 'Montserrat', sans-serif;
+background-color: #F6F6F6;
+}
+
+.image1 {
+position: absolute;
+width: 1442px;
+height: 1022px;
+left: 0px;
+top: 2px;
+}
+
+.image2 {
+position: absolute;
+width: 135px;
+height: 17px;
+left: 42px;
+top: 35px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 25px;
+line-height: 30px;
+text-align: center;
+}
+
+.image3 {
+position: absolute;
+width: 35px;
+height: 30px;
+left: 60px;
+top: 505px;
+}
+
+.image4 {
+position: absolute;
+width: 630px;
+height: 12.12px;
+left: 690px;
+top: 390.88px;
+}
+
+.image5 {
+position: absolute;
+width: 7px;
+height: 7px;
+left: 995px;
+top: 664px;
+}
+
+.image6 {
+position: absolute;
+width: 40px;
+height: 23px;
+left: 962.3px;
+top: 695px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+}
+
+.image7 {
+position: absolute;
+width: 35px;
+height: 30px;
+left: 1364px;
+top: 505px;
+}
+
+.text1 {
+position: absolute;
+width: 535px;
+height: 39px;
+left: 746px;
+top: 425px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 20px;
+
+color: #000000;
+animation:imageFadeIn 5s ease-in-out backwards;
+}
+
+.text2 {
+position: absolute;
+width: 535px;
+height: 145px;
+left: 746px;
+top: 485px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 20px;
+
+color: #000000;
+}
+
+
+/* Animation for Flying Text  */
+
+     .flying-text1  {}
+
+      .flying-text1 span {
+      	 Position:relative;
+	 opacity:0;
+	 animation:flyingText  3s  forwards;
+      }
+
+      @keyframes flyingText {
+	to {
+	   top:0;
+	   left:0;
+	   opacity:1;
+	}
+      }
+</style>
+
+<body>
+
+<!-- TopNav - Gallery -->
+	
+<img class='image1' src="story4.png" width="1442" height="1022">
+
+<img class='image2' src="page4.png" width="135" height="17">
+
+<a href="interactivestory3.html">
+<img class='image3' src="blackarrow2.png" width="35" height="30">
+</a>
+
+<img class='image4' src="union3.png" width="630" height="12">
+
+<img class='image5' src="blackdot.png" width="7" height="7">
+
+<img class='image6' src="four.png" width="40" height="23">
+
+<a href="interactivestory5.html">
+<img class='image7' src="blackarrow1.png" width="35" height="30">
+</a>
+
+<div class='text1'>
+	<p class='flying-text1'>However odd it may seem, he never suspected the truth; it burst upon him suddenly.</p>
+</div>
+
+<div class='text2'>
+	<p>He realized that he
+was unable to remember the shapes, sounds, and colors of his dreams; there were no shapes, colors, or
+sounds, nor were the dreams dreams. They were his reality, a reality beyond silence and sight, and
+therefore beyond memory. [This realization threw him into even greater consternation than the fact
+that from the hour of his death he had been struggling in a whirlwind of senseless images.]</p>
+</div>
+
+</body>
+
+<script type="text/javascript">
+
+for (let k=1; k<2; k++)   {
+
+        let objName=".flying-text"+k;
+        let spanName=objName+" span";
+	document.querySelector(objName).innerHTML=
+		document.querySelector(objName).textContent.replace(/./g, "<span>$&</span>");
+
+	let spans=document.querySelectorAll(spanName);
+	for(let i=0;i<spans.length;i++)  {
+	   let left=innerWidth*Math.random();
+	   let top=innerHeight*Math.random();
+	   if(Math.random() < 0.5)  {
+ 		spans[i].style.left="-"+left+"px";
+
+	   } else {
+		spans[i].style.left=left+"px";
+
+	   }
+	   if(Math.random() < 0.5)  {
+ 		spans[i].style.top="-"+top+"px";
+
+	   } else {
+		spans[i].style.top=top+"px";
+
+	   }
+	}
+   }
+</script>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+   <style>
+      body {
+	 overflow:hidden;
+      }
+      .text-animation {
+      	 Position:absolute;
+	 top:50%;
+	 left:50%;
+	 transform:translate(-50%, -50%);
+	 width:80%;
+	 font-family:"raleway",sans-serif;
+	 color:#222;
+	 font-size:25px;
+      }
+      .text-animation span {
+     position:relative;
+	 opacity:0;
+	 animation:textAnimation 5s ease-in-out forwards;
+      }
+      @keyframes textAnimation {
+	to {
+	   top:0;
+	   left:0;
+	   opacity:1;
+	}
+      }
+   </style>
+
+
+</head>
+
+<body>
+      <div class="text-animation">
+	Online Resource Center
+Due to high call volumes, wait times have been longer than usual. For immediate self-service options and fast answers 
+to a wide variety of questions, see our Online Resource Center and comprehensive FAQs on the merger with Morgan Stanley.
+
+	
+   </div>
+
+      <script type="text/javascript">
+	document.querySelector(".text-animation").innerHTML=
+		document.querySelector(".text-animation").textContent.replace(/./g, "<span>$&</span>");
+
+	let spans=document.querySelectorAll(".text-animation span");
+	for(let i=0;i<spans.length;i++)  {
+	   let left=innerWidth*Math.random();
+	   let top=innerHeight*Math.random();
+	   if(Math.random() < 0.5)  {
+ 		spans[i].style.left="-"+left+"px";
+
+	   } else {
+		spans[i].style.left=left+"px";
+
+	   }
+	   if(Math.random() < 0.5)  {
+ 		spans[i].style.top="-"+top+"px";
+
+	   } else {
+		spans[i].style.top=top+"px";
+
+	   }
+	}
+
+   </script>
+
+  
+
+</body>
+</html>

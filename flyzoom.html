@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+   <style>
+      body {
+	 overflow:hidden;
+     background-color: #eeeeee;
+      }
+      .text-animation {
+      	 Position:absolute;
+	 top:50%;
+	 text-align:center;
+	 width:80%;
+	 font-family:"raleway",sans-serif;
+	 color:blue;
+	 font-size:90px;
+	 opacity:5;
+	 animation:textAnimation 2s ease-in-out forwards;
+      }
+      
+     @keyframes textAnimation {
+      	from  {  font-size:1px;  top:0px}
+		to {
+	   		top:500;
+	   		left:100;
+	   		opacity:1;       
+		}
+      }
+   </style>
+
+
+</head>
+
+<body>
+      <div class="text-animation">  
+		   This is a Test
+      </div>
+
+</body>
+</html>
