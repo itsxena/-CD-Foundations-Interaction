@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+	<title>L O R E</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+<style type="text/css">
+
+html, body {
+font-family: 'Montserrat', sans-serif;
+}
+
+.button1 {
+  border: 2px solid gray;
+  color: gray;
+  background-color: black;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  position: absolute;
+  left: 905px;
+  top: 67px;
+}
+
+.button2 {
+  border: 2px solid gray;
+  color: gray;
+  background-color: black;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  position: absolute;
+  left: 1073px;
+  top: 67px;
+}
+
+.button3 {
+  border: 2px solid gray;
+  color: gray;
+  background-color: black;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  position: absolute;
+  left: 1236px;
+  top: 67px;
+}
+
+.image1 {
+position: relative;
+width: 1440px;
+height: 1024px;
+animation:imageFadeIn 2s ease-in-out backwards;
+}
+
+
+
+/* Animation for Fading in images  */
+
+      @keyframes imageFadeIn {
+      	from  {  opacity:0; }
+	to {  opacity:1;  }
+      }
+      
+</style>
+
+<body>
+
+<img class='image1' src="brand.png">
+
+
+<button class="button1" onmouseover="InvertColor(this)" onmouseout="normal(this)">ABOUT</button>
+
+<button class="button2" onmouseover="InvertColor(this)" onmouseout="normal(this)">WORK</button>
+
+<button class="button3" onmouseover="InvertColor(this)" onmouseout="normal(this)">CONTACT</button>
+
+</body>
+
+<script type="text/javascript">
+function normal(x) {
+  x.style.color = "gray";
+  x.style.background = "black";
+}
+
+function InvertColor(x) {
+  x.style.color = "black";
+  x.style.background = "gray";
+}
+</script>
+
+</html>

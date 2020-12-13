@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+	<title>W O R K</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+<style type="text/css">
+
+html, body {
+font-family: 'Montserrat', sans-serif;
+background-color: white;
+width: 120%;
+}
+  .menuBar {
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  width:100%;
+  }
+  
+  .menuItem  {
+    padding: 5px;
+    border: none;
+    background: transparent;
+    font-size:20px;
+  }
+
+.webimage1  {
+   width:1450px;
+   text-align:center;
+}
+
+.button1 {
+  border: 2px solid;
+  border-color: #1f1f1f;
+  color: #1f1f1f;
+  background-color: transparent;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  position: absolute;
+  left: 905px;
+  top: 67px;
+}
+
+.button2 {
+  border: 2px solid;
+  border-color: #1f1f1f;
+  color: #B6B6B6;
+  background-color: #1f1f1f;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  position: absolute;
+  left: 1073px;
+  top: 67px;
+}
+
+.button3 {
+  border: 2px solid;
+  border-color: #1f1f1f;
+  color: #1f1f1f;
+  background-color: transparent;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  position: absolute;
+  left: 1236px;
+  top: 67px;
+}
+
+.image1 {
+position: absolute;
+width: 95px;
+height: 96px;
+left: 53px;
+top: 43px;
+}
+
+.image2 {
+position: absolute;
+width: 50px;
+height: 50px;
+left: 571px;
+top: 495px;
+}
+
+.image3 {
+position: absolute;
+width: 40px;
+height: 40px;
+left: 576px;
+top: 585px;
+}
+
+.spacing  {letter-spacing:10px;  }
+
+.text1 {
+position: absolute;
+width: 1500px;
+top: 130px;
+text-align:center;
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 37px;
+
+color: #1F1F1F
+}
+      
+</style>
+
+<body onload="initSelect()">
+
+<a href="portfolio1.html">
+<img class='image1' src="logoblack.png">
+</a>
+
+
+<button class="button1" onmouseover="InvertColor(this)" onmouseout="normal(this)" 
+     onclick="NextWebPage('portfolio2.html')">A B O U T</button>
+
+<button class="button2" disabled>W O R K</button>
+
+<button class="button3" onmouseover="InvertColor(this)" onmouseout="normal(this)"
+     onclick="NextWebPage('portfolio4.html')">C O N T A C T</button>
+
+
+<div class="text1">
+
+<table>
+   <tr><td class="spacing">PREVIEW</td></tr>
+
+   <tr><td class="menuBar">
+		    <button id="AllButton" class="menuItem"
+		     	onclick=SelectAll(this)
+		     	onmouseover=getfocus(this)
+                    	onmouseout=losefocus(this)>ALL</button> 
+			<button disabled style="color:black;background:transparent;border:none;font-size:20px" >|</button>
+                     
+                     <button class="menuItem"
+			onclick=SelectWeb(this)					
+ 			onmouseover=getfocus(this)
+                     	onmouseout=losefocus(this)>WEB DESIGN</button>
+			<button disabled style="color:black;background:transparent;border:none;font-size:20px" >|</button>
+                     
+                     <button class="menuItem"
+			onclick=SelectGraphic(this)
+			onmouseover=getfocus(this)
+                     	onmouseout=losefocus(this)>GRAPHIC DESIGN</button>
+	</td></tr>
+
+	<tr> <td style="font-size:10px"><img src="blackdot.png" style="width:10px;height:10px;"></td></tr>
+	<tr><td style="height:20px"></td></tr>
+       <tr id="Row1">  
+		<td>  <img class="webimage1" src="web1.png">  </td>
+       </tr>
+       <tr id="Row2">  
+		<td>  <img class="webimage1" src="web2.png">  </td>
+       </tr>
+       <tr id="Row3">  
+		<td>  <img class="webimage1" src="web3.png">  </td>
+       </tr>
+       <tr id="Row4">  
+		<td>  <img class="webimage1" src="web4.png">  </td>
+       </tr>
+       <tr id="Row5">  
+		<td>  <img class="webimage1" src="web5.png">  </td>
+       </tr>
+   </table>
+
+</div>
+
+</body>
+
+<script type="text/javascript">
+function normal(x) {
+  x.style.color = "#1f1f1f";
+  x.style.background = "transparent";
+}
+
+function InvertColor(x) {
+  x.style.color = "#B6B6B6";
+  x.style.background = "#dddddd";
+  x.style.borderColor="#dddddd";
+}
+
+function NextWebPage(url) {
+  window.open(url, "_self");
+}
+function initSelect()  {
+   SelectAll(document.getElementById("AllButton"))
+}
+
+function losefocus(x) {
+	x.blur();
+	x.style.color="black";
+    x.style.background="transparent";
+    
+}
+function getfocus(x) {
+	x.style.color="white";
+    x.style.background="#BFBFBF";
+}
+function SelectAll(x) {
+    resetMenu()
+    x.disabled=true;
+    x.style.fontWeight="bold";
+   for (i=0; i<5; i++)  {
+      k="Row"+(i+1);
+      document.getElementById(k).style.display="";
+
+   }
+}
+function SelectWeb(x) {
+    resetMenu()
+    x.disabled=true;
+    x.style.fontWeight="bold";
+    document.getElementById("Row1").style.display="";
+    document.getElementById("Row4").style.display="";
+}
+function SelectGraphic(x) {
+    resetMenu()
+    x.disabled=true;
+    x.style.fontWeight="bold";
+    document.getElementById("Row5").style.display="";
+}
+function resetMenu() {
+   var i;
+   var k;
+   var list = document.getElementsByClassName("menuItem");
+   for (i=0; i<3; i++)  {
+      list[i].style.fontWeight="normal";
+      list[i].style.color="black";
+      list[i].disabled=false;
+      list[i].style.background="transparent";
+      losefocus(list[i]);
+   }
+   for (i=0; i<5; i++)  {
+      k="Row"+(i+1);
+      document.getElementById(k).style.display="none";
+
+   }
+}
+
+</script>
+
+</html>
